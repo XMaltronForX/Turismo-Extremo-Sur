@@ -1,0 +1,57 @@
+
+body {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+.nav-item {
+    border: 2px solid #e64141;
+    border-radius: 10px;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #b3ff00;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-size: 30px;
+  }
+
+  .nav-item:hover {
+    background-color: #75f6ff;
+  }
+
+  .navbar {
+    border: 2px solid #e64141;
+
+    background-color: #2793ff;
+    font-size: 18px;
+    
+  }
+  
+  .navbar-brand img {
+    width: 100px;
+    height: 100px;
+  }
+
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .carousel-item img {
+    height: 600px;
+    object-fit: cover;
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+
+
+.card-body{
+
+  background-color: aquamarine;
+  height: 400px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 19px;
+}

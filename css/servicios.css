@@ -1,0 +1,49 @@
+  /* Establecer el ancho y la altura del carrusel */
+  #carouselExampleIndicators {
+    width: 300px; /* Cambia este valor al ancho deseado */
+    height: 200px; /* Cambia este valor a la altura deseada */
+  }
+
+  /* Ajustar el tamaño de las imágenes del carrusel */
+  #carouselExampleIndicators .carousel-item img {
+    width: 100%;
+    object-fit: cover; /* Esto asegura que la imagen cubra completamente el área */
+  }
+
+  .carousel-item img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  body {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+.nav-item {
+    border: 2px solid #e64141;
+    border-radius: 10px;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #b3ff00;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-size: 30px;
+  }
+
+  .nav-item:hover {
+    background-color: #75f6ff;
+  }
+
+  .navbar {
+    border: 2px solid #e64141;
+
+    background-color: #2793ff;
+    font-size: 18px;
+    
+  }
+  
+  .navbar-brand img {
+    width: 100px;
+    height: 100px;
+  }
