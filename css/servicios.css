@@ -1,14 +1,4 @@
-  /* Establecer el ancho y la altura del carrusel */
-  #carouselExampleIndicators {
-    width: 300px; /* Cambia este valor al ancho deseado */
-    height: 200px; /* Cambia este valor a la altura deseada */
-  }
 
-  /* Ajustar el tamaño de las imágenes del carrusel */
-  #carouselExampleIndicators .carousel-item img {
-    width: 100%;
-    object-fit: cover; /* Esto asegura que la imagen cubra completamente el área */
-  }
 
   .carousel-item img {
     height: 200px;
