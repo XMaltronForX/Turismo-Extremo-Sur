@@ -77,6 +77,12 @@ function displayWeather(data) {
             case "partly cloudy":
                 descripcionTraducida = "parcialmente nublado";
                 break;
+            case "mostly cloudy":
+                descripcionTraducida = "mayormente nublado";
+                break;
+            case "mostly sunny":
+                descripcionTraducida = "mayormente soleado";
+                break;
             case "misty":
                 descripcionTraducida = "brumoso";
                 break;
@@ -85,6 +91,9 @@ function displayWeather(data) {
                 break;
             case "showers":
                 descripcionTraducida = "chubascos";
+                break;
+            case "snow":
+                descripcionTraducida = "nevado";
                 break;
             // Agregar más casos según sea necesario para otras descripciones de clima
             default:

@@ -1,120 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clima - Yahoo Weather</title>
-<style>
-    body {
-        background-image: url('../img/fondo.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
 
-    .weather-box {
-    border: 3px solid purple;
-    padding: 5px;
-    width: 55px;
-    height: 90px;
-    margin: 0;
-    margin-bottom: 10px;
-    margin-top: 50px;
-    font-family: 'Droid Serif', serif;
-    font-size: 1.2vw;
-    background-color: antiquewhite;
-    overflow: hidden;
-    margin-left: 10px;
-    border-radius: 5px;
-    display: inline-block; /* Mostrar en línea */
-}
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron"
+      rel="stylesheet"
+    />
 
+    <link href="css/clim.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="img/extremosur.jpg" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="principal.html">casa</a>
+            <a class="nav-item nav-link" href="servicios.html">Servicios</a>
+            <a class="nav-item nav-link" href="nosotros.html">Nosotros</a>
+            <a class="nav-item nav-link" href="clim.html">Consultar clima</a>
+            <a class="nav-item nav-link" href="contactanos.html">Contactanos</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <br />
 
-
-    .card {
-        margin-bottom: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        transition: 0.3s;
-        border-radius: 5px;
-        border: 3px solid rgb(179, 255, 0);
-        font-family: 'Droid Serif', serif;
-        font-size: 1.2vw;
-        background-color: rgb(72, 255, 0);
-    }
-
-    .card-header, .card-body {
-        padding: 20px;
-    }
-
-    .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    }
-
-    .card-body {
-        height: 420px;
-    }
-
-    .nav-item {
-        border: 2px solid #e64141;
-        border-radius: 10px;
-        margin: 0 15px;
-        padding: 10px 20px;
-        background-color: #b3ff00;
-        font-size: 18px;
-        font-family: 'Roboto';
-        font-size: 30px;
-    }
-
-    .nav-item:hover {
-        background-color: #75f6ff;
-    }
-
-    .navbar {
-        border: 2px solid #e64141;
-        background-color: #86c2ff;
-        font-size: 18px;
-    }
-
-    .navbar-brand img {
-        width: 100px;
-        height: 100px;
-    }
-
-
-
- 
-
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1000;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: rgba(255, 255, 255, .8) url('http://i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat;
-    }
-
-    body.loading {
-        overflow: hidden;
-    }
-
-    body.loading .modal {
-        display: block;
-    }
-</style>
-</head>
-<body>
-
-<label for="ubicacion">Ubicación:</label>
-<input type="text" id="ubicacion" value="Punta arenas">
-<button onclick="getWeather()">Obtener Clima</button>
-
-<div id="weatherData"></div>
-
-
-<script src="clim.js"></script>
-<!-- Agregar jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-</body>
+    <div class="container">
+      <label for="ubicacion">Ubicación:</label><input type="text" id="ubicacion" value="Punta arenas" /><button onclick="getWeather()">Obtener Clima</button>
+      <div id="weatherData"></div>
+    </div>
+    <script src="js/clim.js"></script>
+    <!-- Agregar jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
 </html>
