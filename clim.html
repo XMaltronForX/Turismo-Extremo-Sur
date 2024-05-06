@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clima - Yahoo Weather</title>
+<style>
+    body {
+        background-image: url('../img/fondo.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .weather-box {
+    border: 3px solid purple;
+    padding: 5px;
+    width: 55px;
+    height: 90px;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    font-family: 'Droid Serif', serif;
+    font-size: 1.2vw;
+    background-color: antiquewhite;
+    overflow: hidden;
+    margin-left: 10px;
+    border-radius: 5px;
+    display: inline-block; /* Mostrar en línea */
+}
+
+
+
+    .card {
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        border: 3px solid rgb(179, 255, 0);
+        font-family: 'Droid Serif', serif;
+        font-size: 1.2vw;
+        background-color: rgb(72, 255, 0);
+    }
+
+    .card-header, .card-body {
+        padding: 20px;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card-body {
+        height: 420px;
+    }
+
+    .nav-item {
+        border: 2px solid #e64141;
+        border-radius: 10px;
+        margin: 0 15px;
+        padding: 10px 20px;
+        background-color: #b3ff00;
+        font-size: 18px;
+        font-family: 'Roboto';
+        font-size: 30px;
+    }
+
+    .nav-item:hover {
+        background-color: #75f6ff;
+    }
+
+    .navbar {
+        border: 2px solid #e64141;
+        background-color: #86c2ff;
+        font-size: 18px;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+
+ 
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(255, 255, 255, .8) url('http://i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat;
+    }
+
+    body.loading {
+        overflow: hidden;
+    }
+
+    body.loading .modal {
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<label for="ubicacion">Ubicación:</label>
+<input type="text" id="ubicacion" value="Punta arenas">
+<button onclick="getWeather()">Obtener Clima</button>
+
+<div id="weatherData"></div>
+
+
+<script src="clim.js"></script>
+<!-- Agregar jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>
